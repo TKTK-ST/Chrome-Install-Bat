@@ -22,13 +22,6 @@ if %USERNAME% == 30215 (
 
 echo インストールが始まったからもう閉じてもいいよ！!
 
-if %USERNAME% == 30174 (
-
-    C:\>REG ADD "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\i8042prt\Parameters" /v "LayerDriver JPN" /d "kbd101.dll" /t REG_SZ /f
-    C:\>REG ADD "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\i8042prt\Parameters" /v OverrideKeyboardIdentifier /d "PCAT_101KEY" /t REG_SZ /f
-    C:\>REG ADD "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\i8042prt\Parameters" /v OverrideKeyboardSubtype /d "2" /t REG_DWORD /f
-
-)
 
 rem Google Chrome をインストール 開始
 msiexec /i "%~dp0\%fil%" /quiet /norestart
