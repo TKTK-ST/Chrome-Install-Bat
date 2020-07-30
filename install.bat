@@ -2,7 +2,7 @@
 
 echo インストール中.........
 
-set fil=googlechromestandaloneenterprise.msi
+set fil=GoogleChromeStandaloneEnterprise64.msi
 
 
 if %USERNAME% == 30215 (
